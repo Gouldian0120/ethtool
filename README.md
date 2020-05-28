@@ -15,7 +15,7 @@
 
 ![screenshot](./assets/screenshot.png)
 
-_**Instant retro UI for calling any contract function you want**_
+> Instant retro UI for calling any contract function you want
 
 ## Features
 
@@ -28,8 +28,6 @@ _**Instant retro UI for calling any contract function you want**_
 
 ## Install
 
-Works on any dapp project (Truffle, Buidler, etc.) as long as you point it to the JSON artifacts. And even if you don't have a project, you can run it by itself and manually add ABIs and artifacts.
-
 1. Install
 
     ```shell
@@ -41,13 +39,3 @@ Works on any dapp project (Truffle, Buidler, etc.) as long as you point it to th
     ```shell
     eth95 ./build/contracts
     ```
-
-## How it works
-
-When `eth95` is run, an Express server is fired up and a frontend (packaged by [Parcel](https://parceljs.org/)) is served at `localhost:3000` (you can define the port with a flag `-p 1234`). The server will watch the directory you passed in for any changes to your artifacts and send those changes down to the frontend via Websockets.
-
-Note that you can also add any contracts you want if you have the ABI or Artifact (there is an Add Contract button).
-
-## Contact
-
-If you have any questions or comments, please file an issue.
